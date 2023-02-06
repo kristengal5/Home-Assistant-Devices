@@ -1,0 +1,113 @@
+<!--Kristen Gallagher-->
+
+<html>
+	<head>
+		<title>Home Assistant Devices Website</title>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="Home Assistant Devices Website">
+  		<meta name="keywords" content="home, privacy, products, protection, information, assistant, devices">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee&display=swap" rel="stylesheet">
+	</head>
+	<body>
+ 		<a href="index.html">
+ 			<div id="upperlefttext">home assistant devices</div>
+ 		</a>
+		<header class="header">
+ 			<a id="menu" class="header__menu">
+ 				<img style="margin-top:7%" src="./images/hammenu.png" alt="three white horizontal lines">
+ 			</a>
+ 		</header>
+ 		<nav id="drawer" class="nav" style="background-color: #2C3091">
+ 			<a href="index.html">
+ 				<div id="homedevices">home assistant devices</div>
+ 			</a>
+        	<li class="nav__item" id="firstnav" style="display: inline-block; padding-right:16%">
+        		<a href="products.html">products</a>
+        	</li>
+        	<li class="nav__item" id="secondnav"style="display: inline-block; padding-right:13%">
+        		<a href="privacy.html">privacy</a>
+        	</li>
+        	<li class="nav__item" id="thirdnav"style="display: inline-block; padding-right:13%">
+        		<a href="">protection</a>
+        	</li>
+    	</nav>
+    	<main>
+			<div class="abovethefold">
+    			<div class="titletext"id="alexa">Alexa,</div>
+    			<div class="subtitletext">is my information safe?</div>
+				<div class="wave">
+					<picture>
+  						<source style="margin-top: -106px; width: 100%" media="(max-width: 950px)" srcset="./images/wavesmaller.png">
+  						<source style="margin-top: -106px; width: 100%"media="(min-width: 951px)" srcset="./images/wave.png">
+  						<img style="margin-top: -106px; width: 100%"src="./images/wave.png" alt="white wave background">
+					</picture>
+				</div>
+				<div class="boxB" style="float:left">
+					<div id="pic_overlaybutton" class="differenthover">
+						<a class="differenthover" href="privacy.html">find out now</a>
+					</div>
+				</div>
+				<div style="margin-bottom:310px;"></div>
+			</div>
+			<div class="belowthefold">
+				<div class="mediumtext" id="topheading">have you ever wondered...</div>
+				<div class="container" style="padding-top: 50px;justify-content: center">
+					<div class="containerimg">
+						<div class="spacer"></div>
+						<div class="boxA" id = "thinking" >
+							<img src="./images/thinkingthree.png" alt="woman thinking and looking up">
+							<div class="overlay">
+								<div class="texthoveroverlay">"how do I stop a Google Assistant from eavesdropping?"</div>
+							</div>
+						</div>
+					</div>
+					<div class="spacer"></div>
+					<div class="containerimg">
+						<div class="boxA" id = "thinking">
+							<img src="./images/thinkingtwo.png" alt="man thinking and looking up">
+							<div class="overlay">
+								<div class="texthoveroverlay">"how can I stop Alexa from spying on me?"</div>
+							</div>
+						</div>
+					</div>
+					<div class="spacer"></div>
+					<div class="containerimg">
+						<div class="boxA" id = "thinking" >
+							<img src="./images/thinkingone.png" alt="woman thinking with finger near lips looking up">
+							<div class="overlay">
+								<div class="texthoveroverlay">"is Alexa always listening?"</div>
+							</div>
+						</div>
+					</div>
+					<div class="spacer"></div>
+					<div class="mediumtext" style="margin-top: 50px; line-height: 70px;padding-left: 15%; font-size: 50px;padding-right: 15%">what types of home assistant devices can I install in my home?</div>
+					<div class="mediumtext" style="margin-top: 0px; line-height: 70px;padding-left: 15%; padding-right: 15%; font-size:50px; margin-bottom: 130px">do they present privacy violations?</div>	
+				</div>
+			</div>
+			<div class="footer">
+				<div width=100% justify-content=center margin-left=100px>
+					<div class="footertext">home assistant devices inc.</div>
+					<div class="footertext">732-164-8506</div>
+					<div>
+						<img src="./images/socials.png" alt="social media logos" class="iconsbottom" style="padding-bottom:20px">
+					</div>
+				</div>	
+			</div>	
+		</main>
+		<script>
+      		var menu = document.querySelector('#menu');
+      		var main = document.querySelector('main');
+      		var drawer = document.querySelector('.nav');
+      		menu.addEventListener('click', function(e) {
+        		drawer.classList.toggle('open');
+        		e.stopPropagation();
+      		});
+      		main.addEventListener('click', function() {
+        		drawer.classList.remove('open');
+      		});
+    	</script>
+	</body>
+</html>
